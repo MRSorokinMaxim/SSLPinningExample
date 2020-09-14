@@ -1,0 +1,427 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		52DABCA925078F7000F4F959 /* ssl-pinning-test.com.cer in Resources */ = {isa = PBXBuildFile; fileRef = 52DABCA825078F7000F4F959 /* ssl-pinning-test.com.cer */; };
+		52E4389924D43D5C00FC2192 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E4389824D43D5C00FC2192 /* AppDelegate.swift */; };
+		52E4389D24D43D5C00FC2192 /* SSLPinningViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E4389C24D43D5C00FC2192 /* SSLPinningViewController.swift */; };
+		52E438A024D43D5C00FC2192 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52E4389E24D43D5C00FC2192 /* Main.storyboard */; };
+		52E438A224D43D5F00FC2192 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52E438A124D43D5F00FC2192 /* Assets.xcassets */; };
+		52E438A524D43D5F00FC2192 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52E438A324D43D5F00FC2192 /* LaunchScreen.storyboard */; };
+		52E438AD24D43DC600FC2192 /* SSLPinningService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E438AC24D43DC600FC2192 /* SSLPinningService.swift */; };
+		52E438AF24D44A7A00FC2192 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52E438AE24D44A7A00FC2192 /* Alamofire.framework */; };
+		52E438B724D47BAD00FC2192 /* SSLPinningView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E438B624D47BAD00FC2192 /* SSLPinningView.swift */; };
+		D364DFE1C53EB3491F6410C7 /* Pods_SSLPinningExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BAA7FC8AC404A602C624B43 /* Pods_SSLPinningExample.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0BAA7FC8AC404A602C624B43 /* Pods_SSLPinningExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SSLPinningExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		52DABCA825078F7000F4F959 /* ssl-pinning-test.com.cer */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ssl-pinning-test.com.cer"; sourceTree = "<group>"; };
+		52E4389524D43D5C00FC2192 /* SSLPinningExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SSLPinningExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		52E4389824D43D5C00FC2192 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		52E4389C24D43D5C00FC2192 /* SSLPinningViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSLPinningViewController.swift; sourceTree = "<group>"; };
+		52E4389F24D43D5C00FC2192 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		52E438A124D43D5F00FC2192 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		52E438A424D43D5F00FC2192 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		52E438A624D43D5F00FC2192 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52E438AC24D43DC600FC2192 /* SSLPinningService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSLPinningService.swift; sourceTree = "<group>"; };
+		52E438AE24D44A7A00FC2192 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		52E438B624D47BAD00FC2192 /* SSLPinningView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSLPinningView.swift; sourceTree = "<group>"; };
+		57AD6C9D796DC58BD21ABB9F /* Pods-SSLPinningExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SSLPinningExample.debug.xcconfig"; path = "Target Support Files/Pods-SSLPinningExample/Pods-SSLPinningExample.debug.xcconfig"; sourceTree = "<group>"; };
+		FA383344E18879F1A8D2E9B5 /* Pods-SSLPinningExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SSLPinningExample.release.xcconfig"; path = "Target Support Files/Pods-SSLPinningExample/Pods-SSLPinningExample.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		52E4389224D43D5C00FC2192 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D364DFE1C53EB3491F6410C7 /* Pods_SSLPinningExample.framework in Frameworks */,
+				52E438AF24D44A7A00FC2192 /* Alamofire.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		52E4388C24D43D5C00FC2192 = {
+			isa = PBXGroup;
+			children = (
+				52E4389724D43D5C00FC2192 /* SSLPinningExample */,
+				52E4389624D43D5C00FC2192 /* Products */,
+				F98C9FE0390E31F77A5211D0 /* Pods */,
+				DCDE3C1C34522165F43A0AB8 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		52E4389624D43D5C00FC2192 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				52E4389524D43D5C00FC2192 /* SSLPinningExample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		52E4389724D43D5C00FC2192 /* SSLPinningExample */ = {
+			isa = PBXGroup;
+			children = (
+				52E4389824D43D5C00FC2192 /* AppDelegate.swift */,
+				52E4389C24D43D5C00FC2192 /* SSLPinningViewController.swift */,
+				52E438B624D47BAD00FC2192 /* SSLPinningView.swift */,
+				52E438AC24D43DC600FC2192 /* SSLPinningService.swift */,
+				52DABCA825078F7000F4F959 /* ssl-pinning-test.com.cer */,
+				52E4389E24D43D5C00FC2192 /* Main.storyboard */,
+				52E438A124D43D5F00FC2192 /* Assets.xcassets */,
+				52E438A324D43D5F00FC2192 /* LaunchScreen.storyboard */,
+				52E438A624D43D5F00FC2192 /* Info.plist */,
+			);
+			path = SSLPinningExample;
+			sourceTree = "<group>";
+		};
+		DCDE3C1C34522165F43A0AB8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				52E438AE24D44A7A00FC2192 /* Alamofire.framework */,
+				0BAA7FC8AC404A602C624B43 /* Pods_SSLPinningExample.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F98C9FE0390E31F77A5211D0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				57AD6C9D796DC58BD21ABB9F /* Pods-SSLPinningExample.debug.xcconfig */,
+				FA383344E18879F1A8D2E9B5 /* Pods-SSLPinningExample.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		52E4389424D43D5C00FC2192 /* SSLPinningExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52E438A924D43D5F00FC2192 /* Build configuration list for PBXNativeTarget "SSLPinningExample" */;
+			buildPhases = (
+				17BFCD2F6CE76FA482A6D163 /* [CP] Check Pods Manifest.lock */,
+				52E4389124D43D5C00FC2192 /* Sources */,
+				52E4389224D43D5C00FC2192 /* Frameworks */,
+				52E4389324D43D5C00FC2192 /* Resources */,
+				00E208A9979F2D07A8D0304C /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SSLPinningExample;
+			productName = SSLPinningExample;
+			productReference = 52E4389524D43D5C00FC2192 /* SSLPinningExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		52E4388D24D43D5C00FC2192 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1140;
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = "Maxim Sorokin";
+				TargetAttributes = {
+					52E4389424D43D5C00FC2192 = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
+				};
+			};
+			buildConfigurationList = 52E4389024D43D5C00FC2192 /* Build configuration list for PBXProject "SSLPinningExample" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 52E4388C24D43D5C00FC2192;
+			productRefGroup = 52E4389624D43D5C00FC2192 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				52E4389424D43D5C00FC2192 /* SSLPinningExample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		52E4389324D43D5C00FC2192 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52DABCA925078F7000F4F959 /* ssl-pinning-test.com.cer in Resources */,
+				52E438A524D43D5F00FC2192 /* LaunchScreen.storyboard in Resources */,
+				52E438A224D43D5F00FC2192 /* Assets.xcassets in Resources */,
+				52E438A024D43D5C00FC2192 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		00E208A9979F2D07A8D0304C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SSLPinningExample/Pods-SSLPinningExample-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SSLPinningExample/Pods-SSLPinningExample-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SSLPinningExample/Pods-SSLPinningExample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		17BFCD2F6CE76FA482A6D163 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SSLPinningExample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		52E4389124D43D5C00FC2192 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52E4389D24D43D5C00FC2192 /* SSLPinningViewController.swift in Sources */,
+				52E438AD24D43DC600FC2192 /* SSLPinningService.swift in Sources */,
+				52E4389924D43D5C00FC2192 /* AppDelegate.swift in Sources */,
+				52E438B724D47BAD00FC2192 /* SSLPinningView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		52E4389E24D43D5C00FC2192 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				52E4389F24D43D5C00FC2192 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		52E438A324D43D5F00FC2192 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				52E438A424D43D5F00FC2192 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		52E438A724D43D5F00FC2192 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		52E438A824D43D5F00FC2192 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		52E438AA24D43D5F00FC2192 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 57AD6C9D796DC58BD21ABB9F /* Pods-SSLPinningExample.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 77LLGJH4PN;
+				INFOPLIST_FILE = SSLPinningExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = AA.SSLPinningExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		52E438AB24D43D5F00FC2192 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA383344E18879F1A8D2E9B5 /* Pods-SSLPinningExample.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 77LLGJH4PN;
+				INFOPLIST_FILE = SSLPinningExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = AA.SSLPinningExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		52E4389024D43D5C00FC2192 /* Build configuration list for PBXProject "SSLPinningExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52E438A724D43D5F00FC2192 /* Debug */,
+				52E438A824D43D5F00FC2192 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		52E438A924D43D5F00FC2192 /* Build configuration list for PBXNativeTarget "SSLPinningExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52E438AA24D43D5F00FC2192 /* Debug */,
+				52E438AB24D43D5F00FC2192 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 52E4388D24D43D5C00FC2192 /* Project object */;
+}
